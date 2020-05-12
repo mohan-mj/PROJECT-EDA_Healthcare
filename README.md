@@ -279,15 +279,15 @@ for p in ['bmi', 'age', 'charges']:
 ```
 
 
-![png](output_10_0.png)
+![png](pics/output_10_0.png)
 
 
 
-![png](output_10_1.png)
+![png](pics/output_10_1.png)
 
 
 
-![png](output_10_2.png)
+![png](pics/output_10_2.png)
 
 
 
@@ -312,15 +312,15 @@ for c in ['bmi', 'age', 'charges']:
 ```
 
 
-![png](output_12_0.png)
+![png](pics/output_12_0.png)
 
 
 
-![png](output_12_1.png)
+![png](pics/output_12_1.png)
 
 
 
-![png](output_12_2.png)
+![png](pics/output_12_2.png)
 
 
 
@@ -334,19 +334,19 @@ for c in ['sex', 'children', 'smoker', 'region']:
 ```
 
 
-![png](output_13_0.png)
+![png](pics/output_13_0.png)
 
 
 
-![png](output_13_1.png)
+![png](pics/output_13_1.png)
 
 
 
-![png](output_13_2.png)
+![png](pics/output_13_2.png)
 
 
 
-![png](output_13_3.png)
+![png](pics/output_13_3.png)
 
 
 
@@ -363,7 +363,7 @@ sns.pairplot(data)
 
 
 
-![png](output_14_1.png)
+![png](pics/output_14_1.png)
 
 
 
@@ -379,7 +379,7 @@ sns.pairplot(data, hue='sex')
 
 
 
-![png](output_15_1.png)
+![png](pics/output_15_1.png)
 
 
 
@@ -395,7 +395,7 @@ sns.pairplot(data, hue='smoker')
 
 
 
-![png](output_16_1.png)
+![png](pics/output_16_1.png)
 
 
 ## Task 4
@@ -408,7 +408,7 @@ plt.show()
 ```
 
 
-![png](output_18_0.png)
+![png](pics/output_18_0.png)
 
 
 
@@ -424,7 +424,7 @@ sns.boxplot(x='smoker', y="charges", data=data, whis=np.inf)
 
 
 
-![png](output_19_1.png)
+![png](pics/output_19_1.png)
 
 
 
@@ -472,7 +472,7 @@ plt.show()
 ```
 
 
-![png](output_24_0.png)
+![png](pics/output_24_0.png)
 
 
 
@@ -488,7 +488,7 @@ sns.boxplot(x='sex', y="bmi", data=data[['bmi','sex']], whis=np.inf)
 
 
 
-![png](output_25_1.png)
+![png](pics/output_25_1.png)
 
 
 
@@ -504,7 +504,7 @@ sns.violinplot(x="sex", y="bmi", data=data,hue='smoker',split=True,palette='Set1
 
 
 
-![png](output_26_1.png)
+![png](pics/output_26_1.png)
 
 
 
@@ -568,7 +568,7 @@ sns.countplot(x='smoker', data=data, hue='sex')
 
 
 
-![png](output_31_1.png)
+![png](pics/output_31_1.png)
 
 
 
@@ -662,7 +662,7 @@ sns.countplot(x='children', data=data[data['sex']=='female'])
 
 
 
-![png](output_38_1.png)
+![png](pics/output_38_1.png)
 
 
 The count of women without childen are higher. The count plot above shows that the number of childen increases the total count is lesser
@@ -779,7 +779,7 @@ for i in [0,1,2]:
     
 
 
-![png](output_41_1.png)
+![png](pics/output_41_1.png)
 
 
     mean = 30.0526582278481
@@ -792,7 +792,7 @@ for i in [0,1,2]:
     
 
 
-![png](output_41_3.png)
+![png](pics/output_41_3.png)
 
 
     mean = 30.64978991596638
@@ -805,7 +805,7 @@ for i in [0,1,2]:
     
 
 
-![png](output_41_5.png)
+![png](pics/output_41_5.png)
 
 
 
@@ -887,5 +887,4 @@ anova_lm(mymodel)
 The mean of the bmi distribution across women with no childen, one child and two children are 30.
 And the distributions are almost same. A slight variation is visible for two childen case.
 So the ANOVA table is used and concluded that the BMI donot change so the three distributions are same.
-
 
